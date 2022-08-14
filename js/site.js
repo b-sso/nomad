@@ -1,7 +1,7 @@
 // # background random
 const bgList = ["bg1.jpg", "bg2.jpg", "bg3.jpg"];
 const randomBackground = bgList[Math.floor(Math.random() * bgList.length)];
-document.body.style = `background-image: url(../images/${randomBackground})`;
+document.body.style = `background-image: url(./images/${randomBackground})`;
 
 // # clock
 const secClock = document.querySelector(".clock-wrap");
