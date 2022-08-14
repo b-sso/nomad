@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sso's To Do List App</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="quote-wrap">
+            <ul>
+                <li><span class="text"></span>
+                    <span class="name"></span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="clock-weather">
+            <div class="clock-wrap">
+                <div class="time"></div>
+                <div class="date"></div>
+            </div>
+            <div class="weather-wrap">
+                <div class="city">
+                </div>
+                <div class="weather">
+                </div>
+            </div>
+        </section>
+
+        <section class="login-wrap">
+            <form class="form hidden">
+                <label for="user-name" class="title">이름을 입력 해 주세요</label>
+                <input type="text" maxlength="15" placeholder="이름" id="user-name" required>
+                <button type="submit" class="submit">로그인</button>
+            </form>
+            <div class="welcome hidden">
+                <div class="text"></div>
+                <a class="logout-btn">로그아웃</a>
+            </div>
+        </section>
+
+        <section class="todo-wrap">
+            <div class="title">TO Do List</div>
+            <form class="form">
+                <div class="flex-box">
+                    <input type="text" placeholder="오늘의 할 일을 입력 해 주세요" required>
+                    <button type="submit" class="submit">입력</button>
+                </div>
+            </form>
+            <ul class="list">
+            </ul>
+        </section>
+
+
+    </div>
+
+
+    <script src="../js/site.js"></script>
+</body>
+
+</html>

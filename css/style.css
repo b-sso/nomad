@@ -1,0 +1,247 @@
+@charset "utf-8";
+@import url(https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css);
+
+/* Media Query */
+/* for Desktop: 801px ~ */
+.container {
+  max-width: 80rem;
+  position: relative;
+}
+/* for tablet: ~ 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 70rem;
+  }
+}
+
+/* clear */
+html,
+body {
+  font-family: "Pretendard", Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  background-position: 50% 50%;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+* {
+  font-family: "Pretendard";
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.container {
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+input[type="text"] {
+  border: 1px solid #ddd;
+  padding: 0.2rem 0.5rem;
+  height: 3.6rem;
+  outline: none;
+}
+button {
+  border: none;
+  background: #333;
+  color: #fff;
+  height: 3.6rem;
+  padding: 0.2rem 1rem 0.4rem;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  [class$="-wrap"] {
+    width: 100% !important;
+    min-width: auto !important;
+  }
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+
+/* clock-weather */
+.clock-weather {
+  overflow: hidden;
+}
+/* clock-wrap */
+.clock-wrap {
+  float: left;
+}
+.clock-wrap .time {
+  font-size: 7rem;
+  font-weight: 500;
+  transition: 1s color;
+}
+.clock-wrap .date {
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 768px) {
+  .clock-wrap {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+/* weather */
+.weather-wrap {
+  float: right;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  min-width: 30rem;
+  min-height: 10rem;
+  display: flex;
+  color: #fff;
+  flex-wrap: wrap;
+}
+.weather-wrap .city {
+  flex: 2;
+  font-size: 2rem;
+}
+.weather-wrap .weather {
+  flex: 1;
+  font-size: 1.4rem;
+  position: relative;
+}
+.weather-wrap .temp {
+  display: block;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.2rem;
+}
+
+/* login-wrap */
+.login-wrap {
+  overflow: hidden;
+  width: 100%;
+  padding: 4rem 0;
+}
+.login-wrap .title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  display: block;
+}
+.login-wrap input,
+.login-wrap button {
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: margin 0.3s;
+}
+.login-wrap .form {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.login-wrap button {
+  background: #333;
+  transition: 0.3s background;
+}
+.login-wrap button:hover {
+  background: #06c;
+}
+.login-wrap input[type="text"] {
+  transition: 0.3s border-color;
+  border-color: #888;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 50%);
+  height: 4.5rem;
+}
+.login-wrap input[type="text"]:focus {
+  border-color: #06c;
+}
+.login-wrap .hidden {
+  display: none;
+}
+.login-wrap .welcome {
+  font-size: 2rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 3rem 1.2rem;
+}
+.login-wrap .welcome .logout-btn {
+  font-size: 1.3rem;
+  background: #666;
+  color: #fff;
+  padding: 1rem 3rem;
+  display: inline-block;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.login-wrap .welcome .logout-btn:hover {
+  background-color: #333;
+}
+
+/* quote-wrap */
+.quote-wrap {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 2rem 3rem;
+}
+
+/* todo-wrap */
+.todo-wrap {
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  width: 40rem;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 2rem;
+  margin: 0 auto;
+  min-height: 40rem;
+}
+.todo-wrap .form {
+  margin-bottom: 1rem;
+}
+.todo-wrap .flex-box {
+  display: flex;
+}
+.todo-wrap .flex-box input[type="text"] {
+  flex: 1;
+  margin-right: 0.5rem;
+}
+.todo-wrap .title {
+  font-size: 1.6rem;
+  margin: 0 0 1rem;
+}
+.todo-wrap .list {
+  width: 100%;
+}
+.todo-wrap .list li {
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.todo-wrap .list span:first-child {
+  flex: 1;
+  text-align: left;
+}
+.todo-wrap .list span:last-child {
+  flex: 0 0 30px;
+}
+.todo-wrap .list button {
+  background: none;
+  color: #333;
+  height: auto;
+}
+.todo-wrap .list button:hover {
+  color: #06c;
+}
